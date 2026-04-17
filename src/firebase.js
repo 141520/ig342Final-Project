@@ -15,17 +15,17 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAgPVxkVhv6LyHChq07Fdxnw9FFEQuxF30",
-  authDomain: "ig342-81433.firebaseapp.com",
-  projectId: "ig342-81433",
-  storageBucket: "ig342-81433.firebasestorage.app",
-  messagingSenderId: "995742506330",
-  appId: "1:995742506330:web:e079607d25edb7ae986763",
-  measurementId: "G-Q64SQF7BBH"
-};;
+  apiKey: "AIzaSyDxSYqNsQJ8so7u2vffsfieWzriWaBEd7Q",
+  authDomain: "ig342-f1cc4.firebaseapp.com",
+  projectId: "ig342-f1cc4",
+  storageBucket: "ig342-f1cc4.firebasestorage.app",
+  messagingSenderId: "520882963925",
+  appId: "1:520882963925:web:495843322049a46eeda95c",
+  measurementId: "G-CTQ9CLQ34K"
+};
 
 const app = initializeApp(firebaseConfig);
-
+const analytics = getAnalytics(app);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export { signInWithPopup, signOut, onAuthStateChanged };
